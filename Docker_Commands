@@ -24,8 +24,10 @@ docker run -d nginx --> detach the screen
 0-65,535
 
 docker run -d -p 80:80 nginx
+docker run -d -p 8080:80 --name nginx nginx
 docker exec -it nginx bash
 docker inspect container-name/container-ID
+docker logs nginx
 
 How can you create custom images to your applications?
 
